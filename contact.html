@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact — Nexify Labs</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',sans-serif; background:#080e1a; color:#EFF6FF; }
+  nav { background:#0d1829; border-bottom:1px solid #1a3050; padding:16px 32px; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-size:1.4rem; font-weight:800; }
+  .logo span { color:#00BFA5; }
+  nav a { color:#7B9EC0; text-decoration:none; margin-left:24px; }
+  .container { max-width:600px; margin:60px auto; padding:0 24px; text-align:center; }
+  h1 { font-size:2rem; margin-bottom:12px; }
+  p { color:#7B9EC0; margin-bottom:8px; }
+  .email-box { background:#0f1c2e; border:1px solid #1a3050; border-radius:16px; padding:28px; margin-top:32px; }
+  .email-box a { color:#00BFA5; font-size:1.1rem; font-weight:600; text-decoration:none; }
+  footer { text-align:center; padding:32px; color:#3D5A7A; font-size:0.8rem; margin-top:60px; border-top:1px solid #1a3050; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">Nexify<span>Labs</span></div>
+  <div><a href="index.html">← Home</a></div>
+</nav>
+<div class="container">
+  <h1>Contact Us</h1>
+  <p>Have a question or feedback? We'd love to hear from you.</p>
+  <div class="email-box">
+    <p style="color:#7B9EC0;margin-bottom:12px">Email us at:</p>
+    <a href="mailto:support@nexifylabs.in">support@nexifylabs.in</a>
+    <p style="color:#3D5A7A;font-size:0.8rem;margin-top:12px">
+      We respond within 24-48 hours
+    </p>
+  </div>
+</div>
+<footer>© 2025 Nexify Labs</footer>
+</body>
+</html>
+```
+
+---
+
+### Step 4 — GitHub Pages Enable Karo
+```
+1. Repository mein jao
+2. Settings tab click karo
+3. Left sidebar mein "Pages" click karo
+4. Source:  Deploy from a branch
+5. Branch:  main
+6. Folder:  / (root)
+7. Save click karo
+8. 2-3 minute wait karo
+9. URL milega:
+   https://nexifylabs.github.io
+```
+
+---
+
+### Step 5 — Custom Domain Add Karo
+```
+GitHub Pages Settings mein:
+Custom domain →  nexifylabs.in
+Save karo
+
+Ab Namecheap mein jao:
+Dashboard → nexifylabs.in → Manage
+Advanced DNS → Add Records:
+
+Type    Host    Value                    TTL
+─────────────────────────────────────────────
+A       @       185.199.108.153          Auto
+A       @       185.199.109.153          Auto
+A       @       185.199.110.153          Auto
+A       @       185.199.111.153          Auto
+CNAME   www     nexifylabs.github.io     Auto
+
+24 hours mein live ho jayega!
+```
+
+---
+
+## PART 2 — Play Console Setup
+
+### Step 1 — Account Banao
+```
+1. play.google.com/console jao
+2. Personal Gmail se login karo
+3. "Get Started" click karo
+4. Developer account type:
+   Individual select karo
+   (Company baad mein kar sakte ho)
+```
+
+---
+
+### Step 2 — $25 Fee Pay Karo
+```
+1. Google Pay ya Credit/Debit card
+2. One-time payment
+3. Refundable nahi hai
+4. Account 24-48 hours mein activate
+```
+
+---
+
+### Step 3 — Developer Profile Fill Karo
+```
+Developer name  →  Nexify Labs
+Email address   →  tumhari personal email
+                   (baad mein support@nexifylabs.in)
+Website         →  https://nexifylabs.in
+Phone           →  tumhara number
+                   (private rehta hai)
+```
+
+---
+
+### Step 4 — New App Create Karo
+```
+1. "Create app" button click karo
+2. Fill karo:
+   App name      →  AIPDFEditor
+   Language      →  English
+   App or game   →  App
+   Free or paid  →  Free
+3. Declarations:
+   ✅ Developer Program Policies agree
+   ✅ US export laws agree
+4. "Create app" click karo
+```
+
+---
+
+### Step 5 — Store Listing Fill Karo
+```
+App name (30 chars):
+AIPDFEditor — AI PDF Tools
+
+Short description (80 chars):
+Smart PDF editor with AI chat, OCR, signature & 14 offline tools.
+
+Full description:
+(Phase 4 guide wali description use karo)
+
+App icon        →  512×512 PNG
+Feature graphic →  1024×500 PNG
+Screenshots     →  Min 2 phone screenshots
+```
+
+---
+
+### Step 6 — App Content Fill Karo
+```
+Privacy Policy URL:
+https://nexifylabs.in/privacy-policy.html
+
+App category    →  Productivity
+Tags            →  PDF editor, PDF tools, AI PDF
+Contact email   →  support@nexifylabs.in
+```
+
+---
+
+### Step 7 — Content Rating
+```
+1. "Content rating" section jao
+2. Questionnaire fill karo:
+   Violence        →  No
+   Sexual content  →  No
+   Language        →  No
+   Ads             →  Yes (AdMob use karte ho)
+3. Rating milegi: Everyone ✅
+```
+
+---
+
+### Step 8 — Data Safety Fill Karo
+```
+Data collected:
+✅ Name          →  Account management
+✅ Email         →  Account management
+✅ Phone number  →  Account management
+
+Data NOT collected:
+❌ Location
+❌ Financial info
+❌ Health info
+
+Data shared:
+→ Google Gemini  (AI features)
+→ Google AdMob   (Advertising)
+→ Google Drive   (User initiated)
+
+Encryption      →  Yes
+Delete option   →  Yes
+```
+
+---
+
+### Step 9 — Release App
+```
+Testing → Internal testing:
+1. "Internal testing" click karo
+2. "Create new release" click karo
+3. Upload karo:
+   app-release.aab file
+   (Android Studio se generate karo)
+4. Release notes:
+   "v1.0.0 — Initial release
+   14 offline PDF tools
+   AI Chat with Gemini
+   Digital Signature
+   Google Drive Backup"
+5. Save → Review → Start rollout
+```
+
+---
+
+### Step 10 — Production Release
+```
+Internal Testing ke baad:
+1. Closed Testing (beta)
+2. Open Testing
+3. Production
+
+Shortcut — Direct production:
+Releases → Production →
+Create new release → Upload AAB →
+Rollout 100% → Submit
+
+Review time: 2-7 days
+```
+
+---
+
+## Complete Checklist
+```
+GITHUB
+✅ Account banao (nexifylabs)
+✅ Repo banao (nexifylabs.github.io)
+✅ 3 files upload karo
+   index.html
+   privacy-policy.html
+   contact.html
+✅ GitHub Pages enable karo
+✅ Custom domain add karo (nexifylabs.in)
+✅ Namecheap DNS records add karo
+
+PLAY CONSOLE
+✅ Account banao
+✅ $25 pay karo
+✅ Developer name: Nexify Labs
+✅ App create karo: AIPDFEditor
+✅ Store listing fill karo
+✅ Privacy Policy URL add karo
+✅ Content rating complete karo
+✅ Data safety fill karo
+✅ AAB file upload karo
+✅ Production submit karo
